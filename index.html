@@ -34,44 +34,24 @@
     img{
         object-fit: cover;
     }
-    .number-slide1 {
-      background: rgb(64, 175, 255);
-     
-    }
-
-    .number-slide2 {
-      background: rgb(255, 75, 64);
-
-    }
-
-    .number-slide3 {
-      background: rgb(182, 255, 64);
-    }
-
-    .number-slide4 {
-      background: rgb(64, 255, 242);
-    }
-
-    .number-slide5 {
-      background: rgb(255, 64, 156);
-    }
-    .number-slide6 {
-      background: rgb(64, 76, 255);
-    }
+    
   </style>
 <body>
     
     <div id="my-keen-slider" class="keen-slider">
-        <img src="https://www.kipa.co.il/userFiles/1_caded93525a9a5715bc468405ffcb2ac.jpg" class="keen-slider__slide number-slide1">
-        <img src="https://cdn.babamail.co.il/Images/2013/9/3/e4cadf31-a14a-4c37-b338-12da12961c4f.jpg" class="keen-slider__slide number-slide2">
-        <img src="https://www.yaldey-teva.co.il/wp-content/uploads/2020/03/clouds-farmland-field-53435-scaled.jpg" class="keen-slider__slide number-slide3">
-        <img src="https://images1.calcalist.co.il/PicServer2/20122005/312659/2-P.jpg" class="keen-slider__slide number-slide4">
-        <img src="https://eurekacdn-stips.netdna-ssl.com/images/w400/4255210421.jpg" class="keen-slider__slide number-slide5">
-        <img src="https://www.masa.co.il/MASA/_fck_uploads/General_Sherman.jpg" class="keen-slider__slide number-slide6">
+        <img src="https://source.unsplash.com/1600x900/?tree" class="keen-slider__slide number-slide1">
+        <img src="https://source.unsplash.com/1600x900/?sky" class="keen-slider__slide number-slide2">
+        <img src="https://source.unsplash.com/1600x900/?water" class="keen-slider__slide number-slide3">
+        <img src="https://source.unsplash.com/1600x900/?fire" class="keen-slider__slide number-slide4">
+        <img src="https://source.unsplash.com/1600x900/?ground" class="keen-slider__slide number-slide5">
+        <img src="https://source.unsplash.com/1600x900/?wind" class="keen-slider__slide number-slide6">
       </div>
       <script src="https://cdn.jsdelivr.net/npm/keen-slider@4.1.3/keen-slider.min.js"></script>
       <script>
-        var slider = new KeenSlider("#my-keen-slider", { loop: true, slidesPerView: 2 });
+        var slider = new KeenSlider("#my-keen-slider", 
+        { loop: true,
+         slidesPerView: 2, 
+         spacing: 30 });
       </script>
 </body>
 </html>
